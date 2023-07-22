@@ -1,14 +1,20 @@
 'use client';
+import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Fade from 'react-reveal/Fade';
+import Menubar from '../components/Navbar';
 
 export default function Home() {
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    const currentTheme = localStorage.getItem('currentTheme');
+    setTheme(currentTheme);
+  }, [theme]);
+
   return (
-    <div>
-      <h1 className='text-red-900'>Home Page</h1>
-      <Fade left>
-        <h1 className='text-green-900'>React Reveal</h1>
-      </Fade>
-    </div>
+    <>
+      <Menubar />
+    </>
   )
 }
