@@ -2,8 +2,8 @@ import './globals.css'
 import 'animate.css';
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Providers from './providers/providers';
-import ThemeChangeBtn from './components/ThemeChangeBtn';
+import Providers from '../providers/providers';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +22,6 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning={true}>
       <body className={inter.className} suppressHydrationWarning={true} >
         <Providers>
-          <ThemeChangeBtn />
           {children}
         </Providers>
       </body>

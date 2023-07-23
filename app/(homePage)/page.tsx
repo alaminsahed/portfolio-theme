@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Fade from 'react-reveal/Fade';
-import Menubar from '../components/Navbar';
+import NavBar from '../components/NavBar';
 
 export default function Home() {
   const [theme, setTheme] = useState('light');
@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <Menubar />
+      <NavBar />
     </>
   )
 }
