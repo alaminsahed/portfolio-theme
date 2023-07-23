@@ -3,6 +3,8 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image'
 import Fade from 'react-reveal/Fade';
 import NavBar from '../components/NavBar';
+import HeaderMain from '../components/HeaderMain';
+import About from '../components/About';
 
 export default function Home() {
   const [theme, setTheme] = useState('light');
@@ -15,6 +17,8 @@ export default function Home() {
   return (
     <>
       <NavBar />
+      <HeaderMain />
+      <About />
     </>
   )
 }
