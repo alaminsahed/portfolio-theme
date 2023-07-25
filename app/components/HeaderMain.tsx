@@ -13,7 +13,7 @@ library.add(fas, fab);
 
 const HeaderMain = () => {
   return (
-    <div className="h-screen mt-[-70px] bg-black" id="header">
+    <div className="h-screen bg-black" id="header">
       <Parallax
         className="h-screen"
         blur={5}
