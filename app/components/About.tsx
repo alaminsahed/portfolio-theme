@@ -7,6 +7,7 @@ import Zoom from 'react-reveal/Zoom';
 import Rotate from 'react-reveal/Rotate';
 import Bounce from 'react-reveal/Bounce';
 import Roll from 'react-reveal/Roll';
+import Link from "next/link";
 
 
 
@@ -22,7 +23,7 @@ const About = () => {
   ];
 
   return (
-    <div className="about bg-white/80 dark:bg-[#121212]" id="about">
+    <div className="about bg-white/80 dark:bg-[#121212] p-5" id="about">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row">
           <div className="md:basis-2/3 flex flex-col mt-16">
@@ -123,6 +124,16 @@ const About = () => {
                 </source>
                 Your browser does not support the video tag.
               </video>
+            </div>
+            <div className="flex flex-row">
+              <Fade left>
+                <button className="bg-slate-900/100 hover:bg-white border border-gray-950 hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2">Hire Me</button>
+              </Fade>
+              <Fade right>
+                <Link href="https://drive.google.com/file/d/1KxGDHZ802k48IswG6SxuZQUILLN_Qoun/view?usp=sharing" target="blank">
+                  <button className="bg-slate-900/100 hover:bg-white border border-gray-950 hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2"> Download CV </button>
+                </Link>
+              </Fade>
             </div>
           </div>
         </div>
