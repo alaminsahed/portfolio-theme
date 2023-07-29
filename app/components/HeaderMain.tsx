@@ -12,6 +12,8 @@ import Typewriter from "typewriter-effect";
 library.add(fas, fab);
 
 const HeaderMain = () => {
+  const contactLists = [{ name: 'LinkedIn', link: 'https://www.linkedin.com/in/md-al-amin-sahed/', icon: ["fab", "linkedin"] }, { name: 'Github', link: 'https://github.com/alaminsahed', icon: ["fab", "github"] }, { name: 'Blog', link: 'https://sahedthought.hashnode.dev/', icon: ["fab", "medium"] }, { name: 'email', link: "mailto:alaminsahed101@gmail.com", icon: ["fas", "envelope"] }]
+
   return (
     <div className="md:h-screen bg-black" id="header">
       <Parallax
@@ -45,42 +47,19 @@ const HeaderMain = () => {
           </Fade>
           <Fade left cascade>
             <div className="flex flex-row justify-center items-center">
-              <Link
-                href="https://www.linkedin.com/in/md-al-amin-sahed/"
-                className="text-3xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-2 p-2 hover:bg-white hover:text-black"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "linkedin"]}
-                  className="text-center bg-black text-white hover:text-black hover:bg-white p-2 rounded-full"
-                />
-              </Link>
-              <Link
-                href="https://github.com/alaminsahed"
-                className="text-3xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-2 p-2 hover:bg-white hover:text-black"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "github"]}
-                  className="text-center bg-black text-white hover:text-black hover:bg-white p-2 rounded-full"
-                />
-              </Link>
-              <Link
-                href="https://sahedthought.hashnode.dev/"
-                className="text-3xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-2 p-2 hover:bg-white hover:text-black"
-              >
-                <FontAwesomeIcon
-                  icon={["fab", "medium"]}
-                  className="text-center bg-black text-white hover:text-black hover:bg-white p-2 rounded-full"
-                />
-              </Link>
-              <Link
-                href="mailto:alaminsahed101@gmail.com"
-                className="text-3xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-2 p-2 hover:bg-white hover:text-black"
-              >
-                <FontAwesomeIcon
-                  icon={["fas", "envelope"]}
-                  className="text-center bg-black text-white hover:text-black hover:bg-white p-2 rounded-full"
-                />
-              </Link>
+              {
+                contactLists.map((item, index) => (
+                  <Link
+                    href={item.link}
+                    className="text-3xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-2 p-2 hover:bg-white hover:text-black" key={index}
+                  >
+                    <FontAwesomeIcon
+                      icon={item.icon}
+                      className="text-center bg-black text-white hover:text-black hover:bg-white p-2 rounded-full"
+                    />
+                  </Link>
+                ))
+              }
             </div>
           </Fade>
         </div>
