@@ -14,7 +14,7 @@ const Skills = () => {
 	}
 
 	return (
-		<div className="skills flex flex-col items-center p-5 dark:bg-black bg-slate-100 mb-10" id="skills">
+		<div className="skills flex flex-col items-center py-10 dark:bg-black bg-slate-100 mb-10" id="skills">
 			<div className="flex flex-col items-center border-b-4 border-double">
 				<Fade top>
 					<h2 className="text-2xl sm:text-4xl">My Stack</h2>
