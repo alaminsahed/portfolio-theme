@@ -23,7 +23,7 @@ const Navbar = () => {
 		window.addEventListener("scroll", changeNav);
 	}, []);
 
-	const navLists = [{ name: "Home", link: "header" }, { name: "About", link: "about" }, { name: "Skills", link: "skills" }, { name: "Portfolio", link: "portfolio" }, { name: "Blog", link: "blog" }, { name: "Contact", link: "contact" }]
+	const navLists = [{ name: "Home", link: "header" }, { name: "About", link: "about" }, { name: "Skills", link: "skills" }, { name: "Experience", link: "experience" }, { name: "Portfolio", link: "portfolio" }, { name: "Blog", link: "blog" }, { name: "Contact", link: "contact" }]
 
 	return (
 		<nav

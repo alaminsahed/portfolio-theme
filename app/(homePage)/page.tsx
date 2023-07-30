@@ -6,6 +6,7 @@ import NavBar from '../components/NavBar';
 import HeaderMain from '../components/HeaderMain';
 import About from '../components/About';
 import Skills from '../components/Skills';
+import Profession from '../components/Profession';
 
 export default function Home() {
   const [theme, setTheme] = useState('light');
@@ -21,6 +22,7 @@ export default function Home() {
       <HeaderMain />
       <About />
       <Skills />
+      <Profession />
     </>
   )
 }

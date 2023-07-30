@@ -107,15 +107,6 @@ const About = () => {
                 </Bounce>
               </div>
             </div>
-            {/* <div className="hire-cv-button">
-              <Fade left>
-                <button className="theme-fill-btn">Hire Me</button>
-
-                <a href="https://drive.google.com/file/d/1KxGDHZ802k48IswG6SxuZQUILLN_Qoun/view?usp=sharing">
-                  <button className="theme-fill-btn"> Download CV </button>
-                </a>
-              </Fade>
-            </div> */}
           </div>
           <div className="md:basis-1/3 flex flex-col justify-center items-center mt-16">
             <div className="m-auto border-white border-4 select-none grayscale hover:filter-none rounded-full h-56 w-56 overflow-hidden" >
