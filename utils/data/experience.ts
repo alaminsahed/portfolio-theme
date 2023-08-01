@@ -16,6 +16,7 @@ export const projectTagVariant = {
 
 export const totalExperience = [
   {
+    id: "j1",
     title: "Associate Software Engineer",
     company: "SVAM International Inc.",
     company_url: "https://www.svam.com/",
@@ -27,6 +28,7 @@ export const totalExperience = [
     animationDelay: 500,
     projects: [
       {
+        id: "j1p1",
         name: "Big Think Capital",
         live_url: "https://apply.bigthinkcapital.com/",
         description:
@@ -60,6 +62,7 @@ export const totalExperience = [
     ],
   },
   {
+    id: "j2",
     title: "Junior Web Developer",
     company: "Unishopr.com",
     company_url: "https://unishopr.com/",
@@ -72,6 +75,7 @@ export const totalExperience = [
     animationDelay: 500,
     projects: [
       {
+        id: "j2p1",
         name: "Unishopr.com",
         live_url: "https://unishopr.com/",
         description:
@@ -112,6 +116,7 @@ export const totalExperience = [
         animationDelay: 600,
       },
       {
+        id: "j2p2",
         name: "Unishopr Pilot",
         live_url: "",
         description:
@@ -145,6 +150,7 @@ export const totalExperience = [
         animationDelay: 600,
       },
       {
+        id: "j2p3",
         name: "Desh Door",
         live_url: "",
         description:
