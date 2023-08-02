@@ -1,19 +1,3 @@
-export const projectTagVariant = {
-  dark: "bg-gray-100 text-gray-800 text-xs font-medium mr-2 px-1 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500",
-  default:
-    "bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-1 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400",
-  red: "bg-red-100 text-red-800 text-xs font-medium mr-2 px-1 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400",
-  green:
-    "bg-green-100 text-green-800 text-xs font-medium mr-2 px-1 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400",
-  yellow:
-    "bg-yellow-100 text-yellow-800 text-xs font-medium mr-2 px-1 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-400 border border-yellow-400",
-  purple:
-    "bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-1 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400",
-  indigo:
-    "bg-indigo-100 text-indigo-800 text-xs font-medium mr-2 px-1 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-indigo-400 border border-indigo-400",
-  pink: "bg-pink-100 text-pink-800 text-xs font-medium mr-2 px-1 md:px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-pink-400 border border-pink-400",
-};
-
 export const totalExperience = [
   {
     id: "j1",
@@ -45,15 +29,15 @@ export const totalExperience = [
         stacks: [
           {
             name: "React.js",
-            style: projectTagVariant.default,
+            style: "default",
           },
           {
             name: "Bootstrap",
-            style: projectTagVariant.dark,
+            style: "dark",
           },
           {
             name: "TypeScript",
-            style: projectTagVariant.yellow,
+            style: "yellow",
           },
         ],
         animationDuration: 2000,
@@ -91,23 +75,23 @@ export const totalExperience = [
         stacks: [
           {
             name: "React.js",
-            style: projectTagVariant.default,
+            style: "default",
           },
           {
             name: "Next.js",
-            style: projectTagVariant.dark,
+            style: "dark",
           },
           {
             name: "TypeScript",
-            style: projectTagVariant.yellow,
+            style: "yellow",
           },
           {
             name: "Node.js",
-            style: projectTagVariant.green,
+            style: "green",
           },
           {
             name: "Hasura",
-            style: projectTagVariant.indigo,
+            style: "indigo",
           },
         ],
         bgColor: "bg-gray-300",
@@ -129,19 +113,19 @@ export const totalExperience = [
         stacks: [
           {
             name: "React.js",
-            style: projectTagVariant.default,
+            style: "default",
           },
           {
             name: "Node.js",
-            style: projectTagVariant.green,
+            style: "green,",
           },
           {
             name: "Express.js",
-            style: projectTagVariant.purple,
+            style: "purple",
           },
           {
             name: "MongoDB",
-            style: projectTagVariant.indigo,
+            style: "indigo",
           },
         ],
         bgColor: "bg-gray-300",
@@ -163,19 +147,19 @@ export const totalExperience = [
         stacks: [
           {
             name: "React.js",
-            style: projectTagVariant.default,
+            style: "default",
           },
           {
             name: "Node.js",
-            style: projectTagVariant.green,
+            style: "green",
           },
           {
             name: "Express.js",
-            style: projectTagVariant.purple,
+            style: "purple",
           },
           {
             name: "MongoDB",
-            style: projectTagVariant.indigo,
+            style: "indigo",
           },
         ],
         bgColor: "bg-gray-300",

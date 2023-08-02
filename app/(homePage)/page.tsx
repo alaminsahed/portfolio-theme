@@ -1,18 +1,16 @@
-'use client';
-import { useState, useEffect } from 'react';
-import Image from 'next/image'
-import Fade from 'react-reveal/Fade';
-import NavBar from '../components/NavBar';
-import HeaderMain from '../components/HeaderMain';
-import About from '../components/About';
-import Skills from '../components/Skills';
-import Profession from '../components/Profession';
+"use client";
+import { useState, useEffect } from "react";
+import NavBar from "../components/Navbar";
+import HeaderMain from "../components/HeaderMain";
+import About from "../components/About";
+import Skills from "../components/Skills";
+import Profession from "../components/Profession";
 
 export default function Home() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState<string | null>("light");
 
   useEffect(() => {
-    const currentTheme = localStorage.getItem('currentTheme');
+    const currentTheme = localStorage.getItem("currentTheme");
     setTheme(currentTheme);
   }, [theme]);
 
@@ -24,5 +22,5 @@ export default function Home() {
       <Skills />
       <Profession />
     </>
-  )
+  );
 }

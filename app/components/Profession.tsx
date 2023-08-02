@@ -6,6 +6,7 @@ import LightSpeed from "react-reveal/LightSpeed";
 import Link from "next/link";
 import { cn } from "@/libs/utils";
 import { totalExperience } from "@/utils/data/experience";
+import { skillTagsVariants } from "./ui/SkillTags";
 
 const Profession = () => {
   const [showModal, setShowModal] = useState(false);
@@ -74,7 +75,12 @@ const Profession = () => {
                         </div>
                         <div className="pt-2">
                           {project.stacks.map((tag, index) => (
-                            <span className={tag.style} key={index}>
+                            <span
+                              className={skillTagsVariants({
+                                variant: tag.style,
+                              })}
+                              key={index}
+                            >
                               {tag.name}
                             </span>
                           ))}
@@ -86,7 +92,6 @@ const Profession = () => {
                       >
                         Details
                       </button>
-                      {project.name}
                     </div>
                   </Bounce>
                   {showModal && project.id === projectId && (
