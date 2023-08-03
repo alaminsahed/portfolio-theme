@@ -172,7 +172,7 @@ const Profession = () => {
                                 <span className="absolute  transform bg-gray-200 text-gray-600 p-1 rounded text-xs opacity-0 hover:opacity-100">
                                   {project.status !== "successful"
                                     ? project.status
-                                    : "This is a private project. Not available for live preview."}
+                                    : "This is a internal private project. Not available for live preview."}
                                 </span>
                               )}
                               Live
