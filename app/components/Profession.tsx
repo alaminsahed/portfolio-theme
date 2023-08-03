@@ -106,7 +106,9 @@ const Profession = () => {
                         <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
                           <div className="flex items-center justify-between p-5 border-b rounded-t dark:border-gray-600">
                             <h3 className="text-xl font-bold text-rose-400">
-                              {project.name}
+                              <Link href={project.live_url}>
+                                {project.name}
+                              </Link>
                             </h3>
                             <button
                               type="button"
@@ -137,22 +139,43 @@ const Profession = () => {
                               <span className="text-black dark:text-white">
                                 Project Description:{" "}
                               </span>
-                              {project.description}
+                              {project.details}
                             </p>
                             <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
                               <span className="text-black dark:text-white">
-                                My core responsibility:{" "}
+                                My core responsibilities:{" "}
                               </span>
-                              {project.description}
+                              <ul className="list-disc pl-5">
+                                {project.responsibilities.map(
+                                  (responsibility, index) => (
+                                    <li key={index}>{responsibility}</li>
+                                  )
+                                )}
+                              </ul>
                             </p>
                           </div>
-                          <div className="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                          <div className="flex flex-row justify-between items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
                             <button
                               type="button"
                               className=" bg-red-600 text-black hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
                               onClick={() => setShowModal(false)}
                             >
-                              close
+                              Close
+                            </button>
+                            <button
+                              type="button"
+                              className=" bg-green-600 text-black hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600"
+                              disabled={project.live_url === ""}
+                              onClick={() => window.open(project.live_url)}
+                            >
+                              {project.live_url === "" && (
+                                <span className="absolute  transform bg-gray-200 text-gray-600 p-1 rounded text-xs opacity-0 hover:opacity-100">
+                                  {project.status !== "successful"
+                                    ? project.status
+                                    : "This is a private project. Not available for live preview."}
+                                </span>
+                              )}
+                              Live
                             </button>
                           </div>
                         </div>

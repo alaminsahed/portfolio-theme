@@ -17,6 +17,9 @@ export const totalExperience = [
         live_url: "https://apply.bigthinkcapital.com/",
         description:
           "Big Think Capital is a financial technology company that provides a platform for small businesses to access capital. The company offers a wide range of financial products and services to small businesses, including short-term loans, lines of credit, and equipment financing.",
+        details:
+          "A cutting-edge platform that evaluates loan suitability based on credit history, business revenue, inception date, and more. This automation expedites loan processing while maintaining accuracy. Administrators retain manual oversight, reviewing documents, tailoring offers, and interacting directly with customers. With seamless communication and rapid assessment, businesses gain quicker access to personalized funding, fostering growth and financial success.",
+        status: "successful",
         responsibilities: [
           "Developed and maintained the frontend of a project that managed over 3k merchants and lenders on a daily basis using React.js.",
           "Creating new features and building reusable components using React.js, enhancing the functionality and interactivity of web applications.",
@@ -64,6 +67,8 @@ export const totalExperience = [
         live_url: "https://unishopr.com/",
         description:
           "UniShopr is an overseas online shopping platform to get items from anywhere in the world.",
+        details: "",
+        status: "successful",
         responsibilities: [
           "Developed and maintained the frontend and backend of an e-commerce website, serving over 500 orders daily.",
           "Developed new features and reusable components using React.js, ensuring high-quality code and seamless user experiences.",
@@ -105,11 +110,13 @@ export const totalExperience = [
         live_url: "",
         description:
           "UniShopr pilot is a internal project for UniShopr.com. It is a platform for the overseas delivery team to manage their flying time, flying and orders history.",
+        details: "",
         responsibilities: [
           "Developed this project for 50+ internal users to manage their flying time and orders.",
           "Developed new features and reusable components using React.js",
           "Developed APIs using MongoDB and REST with Node.js and Express.js.",
         ],
+        status: "successful",
         stacks: [
           {
             name: "React.js",
@@ -144,6 +151,9 @@ export const totalExperience = [
           "Developed new features and reusable components using React.js",
           "Developed APIs using MongoDB and REST with Node.js and Express.js.",
         ],
+        details: "",
+        status:
+          "This project is deprecated. It was a pilot project for UniShopr.com.",
         stacks: [
           {
             name: "React.js",
