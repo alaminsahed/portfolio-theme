@@ -67,7 +67,8 @@ export const totalExperience = [
         live_url: "https://unishopr.com/",
         description:
           "UniShopr is an overseas online shopping platform to get items from anywhere in the world.",
-        details: "",
+        details:
+          "Unishopr.com revolutionizes cross-border shopping by enabling users to effortlessly purchase products from international websites. With a simple product link paste, the platform calculates costs including currency conversion, shipping, and taxes, ensuring transparency. Upon approval, Unishopr.com handles order placement and doorstep delivery, streamlining the entire process. This innovative solution enhances global shopping accessibility, simplifies logistics, and provides users with a seamless, cost-effective shopping experience.",
         status: "successful",
         responsibilities: [
           "Developed and maintained the frontend and backend of an e-commerce website, serving over 500 orders daily.",
@@ -110,7 +111,8 @@ export const totalExperience = [
         live_url: "",
         description:
           "UniShopr pilot is a internal project for UniShopr.com. It is a platform for the overseas delivery team to manage their flying time, flying and orders history.",
-        details: "",
+        details:
+          "The Unishopr Pilot is a streamlined solution catering to passengers flying with Unishopr's products. This system efficiently stores and manages personal information, legal documents, flying history, and upcoming flight details. By providing a secure, organized, and convenient platform, it enhances passenger experiences, ensures data security, and supports operational insights.",
         responsibilities: [
           "Developed this project for 50+ internal users to manage their flying time and orders.",
           "Developed new features and reusable components using React.js",
@@ -151,7 +153,8 @@ export const totalExperience = [
           "Developed new features and reusable components using React.js",
           "Developed APIs using MongoDB and REST with Node.js and Express.js.",
         ],
-        details: "",
+        details:
+          "Desh Door is a pioneering ecommerce platform designed to connect Bangladeshi expatriates worldwide with the essence of their homeland. This intuitive website enables seamless ordering of authentic Bangladeshi products, offering doorstep delivery to bridge the gap between cultures and continents. With an easy-to-use interface and a global reach, Desh Door redefines expatriate shopping, making it a conduit for comfort, nostalgia, and community.",
         status:
           "This project is deprecated. It was a pilot project for UniShopr.com.",
         stacks: [
