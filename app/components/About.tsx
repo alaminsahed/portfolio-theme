@@ -184,6 +184,7 @@ const About = () => {
                 height="250"
                 autoPlay={true}
                 muted
+                loop
                 className="h-56 w-56"
               >
                 <source src="/video/image-me2.mp4" type="video/mp4"></source>
