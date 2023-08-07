@@ -20,7 +20,7 @@ const Recommendation = () => {
   }, [activeSlide]);
 
   return (
-    <div className="flex flex-col items-center h-screen py-10 bg-slate-400  dark:bg-black">
+    <div className="flex flex-col items-center py-10 bg-slate-400  dark:bg-black">
       <div className="flex flex-col items-center border-b-4 border-double">
         <h2 className="text-2xl sm:text-4xl text-[#040c2c] dark:text-slate-400 font-bold">
           <Slide bottom cascade>
