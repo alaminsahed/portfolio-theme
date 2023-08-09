@@ -6,6 +6,7 @@ import About from "../components/About";
 import Skills from "../components/Skills";
 import Profession from "../components/Profession";
 import Recommendation from "../components/Recommendation";
+import Projects from "../components/Projects";
 
 export default function Home() {
   const [theme, setTheme] = useState<string | null>("light");
@@ -23,6 +24,7 @@ export default function Home() {
       <Skills />
       <Profession />
       <Recommendation />
+      <Projects />
     </>
   );
 }

@@ -12,8 +12,6 @@ const Profession = () => {
   const [showModal, setShowModal] = useState(false);
   const [projectId, setProjectId] = useState("");
 
-  console.log(showModal);
-
   const handleModal = (id: string) => {
     setShowModal(!showModal);
     setProjectId(id);
