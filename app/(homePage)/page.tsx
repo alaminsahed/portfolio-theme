@@ -4,7 +4,7 @@ import NavBar from "../components/Navbar";
 import HeaderMain from "../components/HeaderMain";
 import About from "../components/About";
 import Skills from "../components/Skills";
-import Profession from "../components/Profession";
+import Experience from "../components/Experience";
 import Recommendation from "../components/Recommendation";
 import Projects from "../components/Projects";
 
@@ -22,7 +22,7 @@ export default function Home() {
       <HeaderMain />
       <About />
       <Skills />
-      <Profession />
+      <Experience />
       <Recommendation />
       <Projects />
     </>
