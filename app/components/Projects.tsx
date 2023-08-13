@@ -43,7 +43,9 @@ const Projects = () => {
               key={index}
             >
               <h2>{project.name}</h2>
-              <small className="pt-1">{project.details}</small>
+              <small className="pt-1 text-slate-600 dark:text-gray-400">
+                {project.details}
+              </small>
               <div className="p-1">
                 {project.techTags.map((tag, index) => (
                   <span
