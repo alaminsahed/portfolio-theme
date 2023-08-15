@@ -32,7 +32,7 @@ const ProjectModal = ({
                 href={
                   parent === "experience"
                     ? project.live_url
-                    : project.githubLink
+                    : project.live_url || project.githubLink
                 }
                 target="blank"
               >

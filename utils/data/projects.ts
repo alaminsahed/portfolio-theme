@@ -1,6 +1,44 @@
 export const projectLists = [
   {
     id: 1,
+    name: "Codealoy",
+    details:
+      "Codealoy is an open-source interactive learning web platform that intend to make learning programming & web development easier in Bangla (Bengali Language).",
+    techTags: [
+      {
+        name: "Next.js",
+        style: "default",
+      },
+      {
+        name: "Tailwind CSS",
+        style: "red",
+      },
+      {
+        name: "Markdoc",
+        style: "purple",
+      },
+      {
+        name: "tRPC",
+        style: "green",
+      },
+      {
+        name: "TypeScript",
+        style: "blue",
+      },
+    ],
+    features: [
+      "Homepage: User can find their courses from homepage according to their level",
+      "Course Details: After click on a course, users can see the course details and course content",
+      "Practice: User can practice their code from here",
+      "Career: User can find their career path from here",
+      "Blog: User can read blog from here",
+      "Industry standard: User can find industry standard from here",
+    ],
+    githubLink: "https://github.com/codealoy/codealoy",
+    live_url: "https://www.codealoy.com/",
+  },
+  {
+    id: 2,
     name: "Online Shopping Cart (Sam's accurium)",
     details:
       "A web-based application that allows users to buy and sell products online.",
@@ -62,7 +100,7 @@ export const projectLists = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Employee Management System",
     details:
       "The Employee Management System automates HR tasks like employee data, payroll, attendance, and leave management.",
@@ -140,5 +178,29 @@ export const projectLists = [
       "https://github.com/alaminsahed/employee-managment/assets/57568263/85b23285-ea36-44e6-9da5-80a6a58d3853",
       "https://github.com/alaminsahed/employee-managment/assets/57568263/bf86a1fa-e5ad-4d79-be96-ef610aa82299",
     ],
+  },
+  {
+    id: 4,
+    name: "Covid Tracker",
+    details:
+      "Covid Tracker is a web-based application that allows users to see the current covid-19 situation in all over the world.",
+    techTags: [
+      {
+        name: "React.js",
+        style: "default",
+      },
+      {
+        name: "React Bootstrap",
+        style: "purple",
+      },
+    ],
+    features: [
+      "Homepage: User can see the current covid-19 situation in all over the world.",
+      "Country wise covid-19 situation: User can see the current covid-19 situation in all over the world.",
+      "Search country: User can search any country and see the current covid-19 situation.",
+    ],
+    githubLink: "https://github.com/alaminsahed/covid-tracer",
+    live_url: "https://covid-tracerbd.netlify.app/",
+    images: ["/images/projects/covidTracer/covid.png"],
   },
 ];

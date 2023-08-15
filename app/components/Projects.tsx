@@ -1,24 +1,16 @@
-import Image from "next/image";
 import React, { useState } from "react";
 import Slide from "react-reveal/Slide";
 import { projectLists } from "../../utils/data/projects";
 import { skillTagsVariants } from "./ui/SkillTags";
-import { cn } from "@/libs/utils";
-import Link from "next/link";
 import ProjectModal from "./ui/ProjectModal";
 
 const Projects = () => {
   const [showModal, setShowModal] = useState(false);
   const [projectId, setProjectId] = useState<number>();
-  const [activeSlide, setActiveSlide] = useState(0);
 
   const handleModal = (id: number) => {
     setShowModal(!showModal);
     setProjectId(id);
-  };
-
-  const handleSlideChange = (slideIndex: any) => {
-    setActiveSlide(slideIndex);
   };
 
   return (
