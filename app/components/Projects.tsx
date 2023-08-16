@@ -31,11 +31,17 @@ const Projects = () => {
         <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
           {projectLists.map((project, index) => (
             <div
-              className="flex flex-col p-8 justify-center items-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700"
+              className="flex flex-col p-8 justify-center items-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden"
               key={index}
             >
-              <h2>{project.name}</h2>
-              <small className="pt-1 text-slate-600 dark:text-gray-400">
+              {project.type === "Open Source" && (
+                <div className="absolute top-0 right-0 w-44 h-5 mt-5 transform bg-red-500 text-sm whitespace-no-wrap px-4 border-0 rounded rotate-[15deg] opacity-50 text-center">
+                  Open Source
+                </div>
+              )}
+
+              <h2 className="z-10">{project.name}</h2>
+              <small className="pt-1 text-slate-600 dark:text-gray-400 z-10">
                 {project.details}
               </small>
               <div className="p-1">

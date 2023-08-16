@@ -4,6 +4,7 @@ export const projectLists = [
     name: "Codealoy",
     details:
       "Codealoy is an open-source interactive learning web platform that intend to make learning programming & web development easier in Bangla (Bengali Language).",
+    type: "Open Source",
     techTags: [
       {
         name: "Next.js",
