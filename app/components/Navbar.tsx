@@ -90,7 +90,6 @@ const Navbar = () => {
                   smooth={true}
                   offset={-96}
                   duration={500}
-                  exact="true"
                   onSetActive={() => setActiveLink(navList.link)}
                 >
                   {navList.name}
