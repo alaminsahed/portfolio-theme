@@ -7,6 +7,7 @@ import Skills from "../components/Skills";
 import Experience from "../components/Experience";
 import Recommendation from "../components/Recommendation";
 import Projects from "../components/Projects";
+import Blogs from "../components/Blogs";
 
 export default function Home() {
   const [theme, setTheme] = useState<string | null>("light");
@@ -25,6 +26,7 @@ export default function Home() {
       <Experience />
       <Recommendation />
       <Projects />
+      <Blogs />
     </>
   );
 }
