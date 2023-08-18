@@ -47,7 +47,10 @@ const Contact = () => {
   const onSubmit = (data: FormData) => console.log(data);
 
   return (
-    <div className="flex flex-col items-center py-10" id="contact">
+    <div
+      className="flex flex-col items-center py-10 h-screen justify-center"
+      id="contact"
+    >
       <div className="flex flex-col items-center border-b-4 border-double">
         <h2 className="text-2xl sm:text-4xl text-[#040c2c] dark:text-slate-400 font-bold">
           <Slide bottom cascade>
