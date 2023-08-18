@@ -46,16 +46,20 @@ const Blogs = () => {
                       />
                     </div>
                     <div className="px-7 mt-10 text-black">
-                      <h1 className="text-xl font-bold group-hover:text-purple-900 transition ease-out duration-300">
+                      <h1 className="text-sm lg:text-md font-bold group-hover:text-purple-900 transition ease-out duration-300">
                         {blog.name}
                       </h1>
                       <p className="mt-2 opacity-60 group-hover:opacity-70 truncate...">
                         {blog.details}
                       </p>
                     </div>
-                    <button className="bg-orange-500 hover:bg-orange-700 p-3 text-center rounded mt-5 w-1/2">
+                    <Link
+                      className="bg-orange-500 hover:bg-orange-700 p-3 text-center rounded mt-5 w-1/2"
+                      href={blog.link}
+                      target="_blank"
+                    >
                       See More
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </Flip>
