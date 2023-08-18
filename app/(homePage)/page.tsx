@@ -9,6 +9,7 @@ import Recommendation from "../components/Recommendation";
 import Projects from "../components/Projects";
 import Blogs from "../components/Blogs";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 export default function Home() {
   const [theme, setTheme] = useState<string | null>("light");
@@ -29,6 +30,7 @@ export default function Home() {
       <Projects />
       <Blogs />
       <Contact />
+      <Footer />
     </>
   );
 }
