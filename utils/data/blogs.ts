@@ -6,9 +6,7 @@ export const totalBlogs = [
     details:
       "A regular function is executed based on the run-to-completion model. It cannot pause midway and then continues from where it paused. But the generator function can do it. Let's explore it with an example...",
     photo: "/images/blogs/js.avif",
-    backgroundColor: "bg-purple-100",
-    hoverBackgroundColor: "hover:bg-purple-200",
-    marginTop: "mt-72",
+    variant: "purple",
   },
   {
     id: 2,
@@ -17,9 +15,7 @@ export const totalBlogs = [
     details:
       "Hooks are really useful in functional components in React.js. useState hook is commonly used. In this blog, we will discuss about useState hook in depth...",
     photo: "/images/blogs/react.avif",
-    backgroundColor: "bg-indigo-100",
-    hoverBackgroundColor: "hover:bg-indigo-200",
-    marginTop: "mt-32",
+    variant: "indigo",
   },
   {
     id: 3,
@@ -28,8 +24,6 @@ export const totalBlogs = [
     details:
       "Web scraping is the process of using bots to extract content and data from a website. when user requests on the server to access the website. Server response comes with HTML form...",
     photo: "/images/blogs/node.avif",
-    backgroundColor: "bg-red-100",
-    hoverBackgroundColor: "hover:bg-red-200",
-    marginTop: "mt-5",
+    variant: "red",
   },
 ];

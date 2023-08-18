@@ -5,6 +5,7 @@ import Image from "next/image";
 import { totalBlogs } from "../../utils/data/blogs";
 import { cn } from "@/libs/utils";
 import Link from "next/link";
+import { BlogCardVariants } from "./ui/BlogCardVariants";
 
 const Blogs = () => {
   return (
@@ -31,14 +32,9 @@ const Blogs = () => {
               <Flip key={blog.id} delay={1200}>
                 <div className="mx-3 lg:pl-20">
                   <div
-                    className={cn(
-                      "py-10 pb-3 h-4/6 relative bg-purple-100 group hover:bg-purple-200 cursor-pointer transition ease-out duration-300 rounded-md flex flex-col items-center justify-center",
-                      [
-                        blog.marginTop,
-                        blog.backgroundColor,
-                        blog.hoverBackgroundColor,
-                      ]
-                    )}
+                    className={BlogCardVariants({
+                      variant: blog.variant,
+                    })}
                   >
                     <div className="px-3">
                       <Image
