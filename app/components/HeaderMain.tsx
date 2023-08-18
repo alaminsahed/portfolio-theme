@@ -1,18 +1,38 @@
 "use client";
-import React from "react";
-import { Parallax } from "react-parallax";
-import Fade from "react-reveal/Fade";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
+import { IconProp, library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+import { Parallax } from "react-parallax";
+import Fade from "react-reveal/Fade";
 import Typewriter from "typewriter-effect";
 
 library.add(fas, fab);
 
 const HeaderMain = () => {
-  const contactLists = [{ name: 'LinkedIn', link: 'https://www.linkedin.com/in/md-al-amin-sahed/', icon: ["fab", "linkedin"] }, { name: 'Github', link: 'https://github.com/alaminsahed', icon: ["fab", "github"] }, { name: 'Blog', link: 'https://sahedthought.hashnode.dev/', icon: ["fab", "medium"] }, { name: 'email', link: "mailto:alaminsahed101@gmail.com", icon: ["fas", "envelope"] }]
+  const contactLists = [
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/md-al-amin-sahed/",
+      icon: ["fab", "linkedin"],
+    },
+    {
+      name: "Github",
+      link: "https://github.com/alaminsahed",
+      icon: ["fab", "github"],
+    },
+    {
+      name: "Blog",
+      link: "https://sahedthought.hashnode.dev/",
+      icon: ["fab", "medium"],
+    },
+    {
+      name: "email",
+      link: "mailto:alaminsahed101@gmail.com",
+      icon: ["fas", "envelope"],
+    },
+  ];
 
   return (
     <div className="md:h-screen bg-black" id="header">
@@ -47,19 +67,18 @@ const HeaderMain = () => {
           </Fade>
           <Fade left cascade>
             <div className="flex flex-row justify-center items-center">
-              {
-                contactLists.map((item, index) => (
-                  <Link
-                    href={item.link}
-                    className="text-3xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-2 p-2 hover:bg-white hover:text-black" key={index}
-                  >
-                    <FontAwesomeIcon
-                      icon={item.icon}
-                      className="text-center bg-black text-white hover:text-black hover:bg-white p-2 rounded-full"
-                    />
-                  </Link>
-                ))
-              }
+              {contactLists.map((item, index) => (
+                <Link
+                  href={item.link}
+                  className="text-3xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-2 p-2 hover:bg-white hover:text-black"
+                  key={index}
+                >
+                  <FontAwesomeIcon
+                    icon={item.icon as IconProp}
+                    className="text-center bg-black text-white hover:text-black hover:bg-white p-2 rounded-full"
+                  />
+                </Link>
+              ))}
             </div>
           </Fade>
         </div>
