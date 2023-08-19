@@ -39,7 +39,7 @@ const HeaderMain = () => {
       <Parallax
         className="md:h-screen"
         blur={5}
-        bgImage="/images/background.png"
+        bgImage="/images/background.webp"
         bgImageAlt="banner"
         strength={500}
       >

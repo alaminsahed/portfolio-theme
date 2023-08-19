@@ -1,6 +1,6 @@
 export const skillLists = [
-  { name: "Javascript", logo: "js5.png", level: "Core Skill", start: 2020 },
-  { name: "React.js", logo: "react3.png", level: "Core Skill", start: 2020 },
+  { name: "Javascript", logo: "js5.webp", level: "Core Skill", start: 2020 },
+  { name: "React.js", logo: "react3.webp", level: "Core Skill", start: 2020 },
   { name: "Next.js", logo: "nextjs.png", level: "Medium", start: 2021 },
   { name: "Redux", logo: "redux4.png", level: "Medium", start: 2020 },
   { name: "Bootstrap", logo: "boot.png", level: "Core Skill", start: 2020 },
