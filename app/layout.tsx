@@ -2,7 +2,7 @@ import "./globals.css";
 import "animate.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Providers from "../providers/providers";
+import Providers from "../providers/themeProviders";
 import { ToasterProvider } from "../providers/toasterProvider";
 
 const inter = Inter({ subsets: ["latin"] });
