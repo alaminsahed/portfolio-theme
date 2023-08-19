@@ -67,7 +67,7 @@ const Contact = () => {
         <form onSubmit={handleSubmit(onSubmit)}>
           {contactInputs.map((input: any) => (
             <div className="flex flex-col mb-4 w-full" key={input.name}>
-              <label className="mb-2 text-md text-gray-900 dark:text-gray-100">
+              <label className="mb-2 text-md text-gray-900 dark:text-white">
                 {input.label}
               </label>
               {input.name === "message" ? (

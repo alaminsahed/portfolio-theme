@@ -28,22 +28,22 @@ const Projects = () => {
         </h3>
       </div>
       <div className="p-5">
-        <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
+        <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-800 md:mb-12 md:grid-cols-2">
           {projectLists.map((project, index) => (
             <div
-              className="flex flex-col p-8 justify-center items-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-800 dark:border-gray-700 relative overflow-hidden"
+              className="flex flex-col p-8 justify-center items-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-gray-900 dark:border-gray-700 relative overflow-hidden"
               key={index}
             >
               {project.type === "Open Source" && (
-                <div className="absolute top-0 right-0 w-44 h-5 mt-5 transform bg-red-500 text-sm whitespace-no-wrap px-4 border-0 rounded rotate-[15deg] opacity-80 text-center">
+                <div className="absolute top-0 right-0 w-44 h-5 mt-5 transform bg-red-900 text-sm whitespace-no-wrap px-4 border-0 rounded rotate-[15deg] opacity-80 text-center font-semibold">
                   Open Source
                 </div>
               )}
 
-              <h2 className="z-10 text-base font-semibold text-blue-900 dark:text-white">
+              <h2 className="z-10 text-base font-bold text-blue-900 dark:text-white">
                 {project.name}
               </h2>
-              <small className="pt-1 z-10 text-slate-600 dark:text-gray-400">
+              <small className="pt-1 z-10 text-slate-600 dark:text-white/75">
                 {project.details}
               </small>
               <div className="p-1">
