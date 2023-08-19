@@ -5,6 +5,7 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Slide from "react-reveal/Slide";
 import { contactInputs } from "../../utils/data/contacts";
+import { toast } from "react-toastify";
 
 const schema = yup.object({
   name: yup.string().optional(),
@@ -16,14 +17,31 @@ const schema = yup.object({
 type FormData = yup.InferType<typeof schema>;
 
 const Contact = () => {
+  const url = "https://formspree.io/f/mqkwlgye";
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm({
     resolver: yupResolver(schema),
   });
-  const onSubmit = (data: FormData) => console.log(data);
+  const onSubmit = (data: FormData) => {
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then(() => {
+        toast.success("Message sent successfully");
+      })
+      .catch(() => {
+        toast.error("Message failed to send");
+      })
+      .finally(() => {
+        reset();
+      });
+  };
 
   return (
     <div

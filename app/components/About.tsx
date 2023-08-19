@@ -188,13 +188,15 @@ const About = () => {
             </div>
             <div className="flex flex-row">
               <Fade left>
-                <button className="bg-slate-900/100 hover:bg-white border border-gray-950 hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2">
-                  Hire Me
-                </button>
+                <Link href="mailto:alaminsahed101@gmail.com" target="blank">
+                  <button className="bg-slate-900/100 hover:bg-white border border-gray-950 hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2">
+                    Hire Me
+                  </button>
+                </Link>
               </Fade>
               <Fade right>
                 <Link
-                  href="https://drive.google.com/file/d/1KxGDHZ802k48IswG6SxuZQUILLN_Qoun/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1Lv8Ernu2bPAHeXoji68dv9caNybi0kwu/view?usp=sharing"
                   target="blank"
                 >
                   <button className="bg-slate-900/100 hover:bg-white border border-gray-950 hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2">
