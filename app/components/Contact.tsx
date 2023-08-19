@@ -57,17 +57,17 @@ const Contact = () => {
             Contact
           </Slide>
         </h2>
-        <h4 className="text-xs sm:text-2xl">
+        <h3 className="text-xs sm:text-2xl">
           <Slide left cascade>
             <span> Let&apos;s get in touch</span>
           </Slide>
-        </h4>
+        </h3>
       </div>
       <div className="w-1/2">
         <form onSubmit={handleSubmit(onSubmit)}>
           {contactInputs.map((input: any) => (
             <div className="flex flex-col mb-4 w-full" key={input.name}>
-              <label className="mb-2 text-md text-gray-900 dark:text-gray-100">
+              <label className="mb-2 text-md text-gray-900 dark:text-white">
                 {input.label}
               </label>
               {input.name === "message" ? (

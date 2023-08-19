@@ -41,8 +41,9 @@ const Navbar = () => {
       )}
     >
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-        <Link to="/" className="flex items-center">
+        <Link to="/" className="flex items-center" href="/">
           <Image src="/images/logo.png" alt="Logo" width={90} height={60} />
+          <span className="sr-only">Brad Logo</span>
         </Link>
         <button
           data-collapse-toggle="#navbar-default"
@@ -91,6 +92,7 @@ const Navbar = () => {
                   offset={-96}
                   duration={500}
                   onSetActive={() => setActiveLink(navList.link)}
+                  href={navList.link}
                 >
                   {navList.name}
                 </Link>

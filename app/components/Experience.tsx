@@ -49,12 +49,11 @@ const Experience = () => {
             <div className="pt-5">
               <h4 className="text-xl font-semibold">Project Lists:</h4>
               {experience.projects.map((project, index) => (
-                <>
+                <div key={project.id}>
                   <Bounce
                     cascade
                     duration={project.animationDuration}
                     delay={project.animationDelay}
-                    key={project.id}
                   >
                     <div className="p-4 rounded-lg mt-3 flex flex-col bg-gray-300 dark:bg-gray-800">
                       <div className="text-base text-slate-600 dark:text-gray-400">
@@ -99,7 +98,7 @@ const Experience = () => {
                       parent="experience"
                     />
                   )}
-                </>
+                </div>
               ))}
             </div>
           </div>

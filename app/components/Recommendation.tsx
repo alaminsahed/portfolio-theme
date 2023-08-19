@@ -27,11 +27,11 @@ const Recommendation = () => {
             Recommendation
           </Slide>
         </h2>
-        <h4 className="text-xs sm:text-2xl">
+        <h3 className="text-xs sm:text-2xl">
           <Slide left cascade>
             Colleague Voices: Reflecting Me Through Their Eyes
           </Slide>
-        </h4>
+        </h3>
       </div>
       <div className="py-10 w-full flex flex-col justify-center items-center mt-10">
         <div id="gallery" className="relative w-full" data-carousel="slide">
@@ -102,9 +102,9 @@ const Recommendation = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M5 1 1 5l4 4"
                 />
               </svg>
@@ -131,9 +131,9 @@ const Recommendation = () => {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="m1 9 4-4-4-4"
                 />
               </svg>
