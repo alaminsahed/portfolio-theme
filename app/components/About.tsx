@@ -30,11 +30,11 @@ const About = () => {
                   About Me
                 </Zoom>
               </h2>
-              <h6 className="text-lg lg:text-2xl p-3 font-normal dark:text-slate-200/70">
+              <h3 className="text-lg lg:text-2xl p-3 font-normal dark:text-slate-200/70">
                 <Slide bottom cascade>
                   Frontend Developer
                 </Slide>
-              </h6>
+              </h3>
             </div>
             <div className="about-text">
               <div className="mb-4 border-b border-gray-200 dark:border-gray-700">
@@ -70,7 +70,6 @@ const About = () => {
                       "p-4 rounded-lg bg-gray-50 dark:bg-gray-800",
                       activeTab === "aboutMe" ? "block" : "hidden"
                     )}
-                    id="aboutMe"
                     role="tabpanel"
                   >
                     <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -108,7 +107,6 @@ const About = () => {
                       "p-4 rounded-lg bg-gray-50 dark:bg-gray-800",
                       activeTab === "degree" ? "block" : "hidden"
                     )}
-                    id="degree"
                     role="tabpanel"
                   >
                     <div className="text-sm md:text-2xl text-gray-500 dark:text-gray-400">
@@ -127,7 +125,6 @@ const About = () => {
                       "p-4 rounded-lg bg-gray-50 dark:bg-gray-800",
                       activeTab === "learning" ? "block" : "hidden"
                     )}
-                    id="degree"
                     role="tabpanel"
                   >
                     <div className="text-sm md:text-lg text-gray-500 dark:text-gray-400">
@@ -144,7 +141,6 @@ const About = () => {
                       "p-4 rounded-lg bg-gray-50 dark:bg-gray-800",
                       activeTab === "profession" ? "block" : "hidden"
                     )}
-                    id="degree"
                     role="tabpanel"
                   >
                     <div className="text-sm md:text-2xl text-gray-500 dark:text-gray-400">
@@ -162,7 +158,6 @@ const About = () => {
                       "p-4 rounded-lg bg-gray-50 dark:bg-gray-800 mt-1",
                       activeTab === "profession" ? "block" : "hidden"
                     )}
-                    id="degree"
                     role="tabpanel"
                   >
                     <div className="text-sm md:text-2xl text-gray-500 dark:text-gray-400">

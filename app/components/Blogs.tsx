@@ -3,7 +3,6 @@ import Slide from "react-reveal/Slide";
 import Flip from "react-reveal/Flip";
 import Image from "next/image";
 import { totalBlogs } from "../../utils/data/blogs";
-import { cn } from "@/libs/utils";
 import Link from "next/link";
 import { BlogCardVariants } from "./ui/BlogCardVariants";
 
@@ -19,11 +18,11 @@ const Blogs = () => {
             Blogs
           </Slide>
         </h2>
-        <h4 className="text-xs sm:text-2xl">
+        <h3 className="text-xs sm:text-2xl">
           <Slide left cascade>
             My thoughts on various topics
           </Slide>
-        </h4>
+        </h3>
       </div>
       <div className="h-full">
         <div className="container mx-auto  lg:px-20">
@@ -58,7 +57,7 @@ const Blogs = () => {
                       href={blog.link}
                       target="_blank"
                     >
-                      See More
+                      More Details
                     </Link>
                   </div>
                 </div>

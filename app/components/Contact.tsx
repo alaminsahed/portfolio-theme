@@ -57,11 +57,11 @@ const Contact = () => {
             Contact
           </Slide>
         </h2>
-        <h4 className="text-xs sm:text-2xl">
+        <h3 className="text-xs sm:text-2xl">
           <Slide left cascade>
             <span> Let&apos;s get in touch</span>
           </Slide>
-        </h4>
+        </h3>
       </div>
       <div className="w-1/2">
         <form onSubmit={handleSubmit(onSubmit)}>

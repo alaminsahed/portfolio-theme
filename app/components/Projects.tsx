@@ -21,11 +21,11 @@ const Projects = () => {
             Projects
           </Slide>
         </h2>
-        <h4 className="text-xs sm:text-2xl">
+        <h3 className="text-xs sm:text-2xl">
           <Slide bottom cascade>
             Some of my personal works
           </Slide>
-        </h4>
+        </h3>
       </div>
       <div className="p-5">
         <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
@@ -35,13 +35,15 @@ const Projects = () => {
               key={index}
             >
               {project.type === "Open Source" && (
-                <div className="absolute top-0 right-0 w-44 h-5 mt-5 transform bg-red-500 text-sm whitespace-no-wrap px-4 border-0 rounded rotate-[15deg] opacity-50 text-center">
+                <div className="absolute top-0 right-0 w-44 h-5 mt-5 transform bg-red-500 text-sm whitespace-no-wrap px-4 border-0 rounded rotate-[15deg] opacity-80 text-center">
                   Open Source
                 </div>
               )}
 
-              <h2 className="z-10">{project.name}</h2>
-              <small className="pt-1 text-slate-600 dark:text-gray-400 z-10">
+              <h2 className="z-10 text-base font-semibold text-blue-900 dark:text-white">
+                {project.name}
+              </h2>
+              <small className="pt-1 z-10 text-slate-600 dark:text-gray-400">
                 {project.details}
               </small>
               <div className="p-1">

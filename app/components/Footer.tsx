@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-100 text-black dark:text-white dark:bg-black py-5 mt-20">
-      <div className="container mx-auto py-8">
+    <footer className="bg-slate-100 text-black dark:text-white dark:bg-black py-6 mt-20">
+      <div className="container mx-auto">
         <div className="flex justify-between items-center mx-5">
           <div>
             <p>Copyright &copy; 2023 My Website</p>
