@@ -187,7 +187,7 @@ const About = () => {
                 loop
                 className="h-56 w-56"
               >
-                <source src="/video/image-me2.mp4" type="video/mp4"></source>
+                <source src="/video/image-me2.webm" type="video/webm"></source>
                 Your browser does not support the video tag.
               </video>
             </div>
