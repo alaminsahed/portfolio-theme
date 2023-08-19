@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import Slide from "react-reveal/Slide";
+import { contactInputs } from "../../utils/data/contacts";
 
 const schema = yup.object({
   name: yup.string().optional(),
@@ -15,28 +16,6 @@ const schema = yup.object({
 type FormData = yup.InferType<typeof schema>;
 
 const Contact = () => {
-  const contactInputs: any = [
-    { name: "name", type: "text", placeholder: "Smit Sedan", label: "Name" },
-    {
-      name: "email",
-      type: "email",
-      placeholder: "smit@abc.com",
-      label: "Email *",
-    },
-    {
-      name: "company",
-      type: "text",
-      placeholder: "ABC",
-      label: "Company Name",
-    },
-    {
-      name: "message",
-      type: "text",
-      placeholder: "I want to discuss about a great opportunity",
-      label: "Message *",
-    },
-  ];
-
   const {
     register,
     handleSubmit,
