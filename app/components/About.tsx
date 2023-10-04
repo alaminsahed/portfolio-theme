@@ -79,12 +79,12 @@ const About = () => {
                       React.js, and related technologies.
                       <br />
                       <br />
-                      Currently, I am serving as an Associate Software Engineer
-                      at SVAM Bangladesh PVT. LTD, a subsidiary of SVAM
-                      International. In this role, I specialize in frontend
-                      development using React.js, Typescript, Redux, and
-                      Redux-saga. Additionally, I contribute to the backend by
-                      building REST APIs with Node.js and Express.js.
+                      Currently, I am serving as a Software Engineer at SVAM
+                      Bangladesh PVT. LTD, a subsidiary of SVAM International.
+                      In this role, I specialize in frontend development using
+                      React.js, Typescript, Redux, and Redux-saga. Additionally,
+                      I contribute to the backend by building REST APIs with
+                      Node.js and Express.js.
                       <br />
                       <br />
                       Previously, I worked as a full-stack web developer at
@@ -145,7 +145,7 @@ const About = () => {
                   >
                     <div className="text-sm md:text-2xl text-gray-500 dark:text-gray-400">
                       <h2 className="font-bold">
-                        Associate Software Engineer (Frontend)
+                        Software Engineer (Frontend)
                       </h2>
                       <h4>SVAM International</h4>
                       <p>Duration: 7/2022 - present</p>

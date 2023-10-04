@@ -1,11 +1,11 @@
 export const totalExperience = [
   {
     id: "j1",
-    title: "Associate Software Engineer",
+    title: "Software Engineer",
     company: "SVAM International Inc.",
     company_url: "https://www.svam.com/",
     duration: "July 2022 - Present",
-    stacks: "React.js, Bootstrap, Tailwind CSS and Angular",
+    stacks: "React.js, Redux, Bootstrap, Tailwind CSS and Angular",
     area: "Frontend",
     companyDescription:
       "SVAM International Inc. is a global Information Technology (IT) services provider that delivers value and competitive advantage to its customers by improving their access to critical information, automating their business processes, and helping their personnel collaborate effectively.",
