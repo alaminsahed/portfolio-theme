@@ -73,29 +73,46 @@ const About = () => {
                     role="tabpanel"
                   >
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                      I am a passionate web developer with nearly 2+ years of
-                      professional experience. My expertise lies in frontend
-                      development, particularly working with JavaScript,
-                      React.js, and related technologies.
+                      I am a passionate web developer with over 4 years of
+                      professional experience, specializing in frontend
+                      development. My expertise includes JavaScript, React.js,
+                      and related technologies.
                       <br />
                       <br />
-                      Currently, I am serving as a Software Engineer at SVAM
-                      Bangladesh PVT. LTD, a subsidiary of SVAM International.
-                      In this role, I specialize in frontend development using
-                      React.js, Typescript, Redux, and Redux-saga. Additionally,
-                      I contribute to the backend by building REST APIs with
-                      Node.js and Express.js.
+                      Currently, I lead frontend projects using modern tech
+                      stacks, delivering responsive and reusable components that
+                      reduce project timelines by 15-20%. I have designed and
+                      developed intuitive architecture, user interfaces, and
+                      business logic for various projects, including municipal
+                      systems, an Automated Distribution System for a global
+                      brand, an ERP solution for the garment industry, and
+                      several other projects, significantly improving
+                      operational efficiency and streamlining data management.
                       <br />
                       <br />
-                      Previously, I worked as a full-stack web developer at
-                      unshopr.com. During my time there, I focused on creating
-                      reusable components in React.js and Typescript, while also
-                      integrating APIs on the frontend. On the backend, I
-                      developed APIs using Node.js, Express.js, Typescript,
+                      Previously, I served as a Software Engineer at SVAM
+                      Bangladesh Pvt. Ltd., a subsidiary of SVAM International.
+                      In this role, I developed and maintained projects using
+                      React.js and TypeScript, integrating RESTful and
+                      third-party APIs. I enhanced the user experience by 15-20%
+                      through bug fixes and the implementation of business
+                      logic, demonstrating a strong understanding of business
+                      workflows. I also developed a loan provisioning solution,
+                      a tiffin management system, an online learning platform,
+                      and various internal and R&D projects, collaborating with
+                      developers from diverse backgrounds to ensure successful
+                      project delivery.
+                      <br />
+                      <br />
+                      Earlier in my career, I worked as a full-stack web
+                      developer at unshopr.com. During this time, I focused on
+                      creating reusable components in React.js and TypeScript
+                      while integrating APIs on the frontend. On the backend, I
+                      developed APIs using Node.js, Express.js, TypeScript,
                       Hasura, and GraphQL.
                       <br />
-                      <br />I have an inherent curiosity to continually learn
-                      and expand my technical expertise. Alongside my
+                      <br />I have a strong passion for learning and constantly
+                      expanding my technical expertise. In addition to my
                       development work, I enjoy sharing my knowledge through
                       technical blog posts.
                     </p>
@@ -128,17 +145,34 @@ const About = () => {
                     role="tabpanel"
                   >
                     <div className="text-sm md:text-lg text-gray-500 dark:text-gray-400">
-                      <b>Skills:</b> JavaScript, React.js, Next.js, TypeScript,
-                      Redux, Node.js, Express.js, Git & Github. <br /> <br />
-                      <b>Familiar With:</b> Redux-Saga, Angular, Hasura,
-                      MongoDB.
+                      <b>Skills:</b> JavaScript, React.js, TypeScript, Redux,
+                      Next.js, REST API, Node.js, Git & Github <br /> <br />
+                      <b>Familiar With:</b> Redux-Saga, GraphQL, Hasura,
+                      MongoDB, Firebase, Nest.js
                     </div>
                   </div>
                 </Roll>
-                <Bounce cascade duration={2000}>
+                <Bounce cascade>
                   <div
                     className={cn(
                       "p-4 rounded-lg bg-gray-50 dark:bg-gray-800",
+                      activeTab === "profession" ? "block" : "hidden"
+                    )}
+                    role="tabpanel"
+                  >
+                    <div className="text-sm md:text-2xl text-gray-500 dark:text-gray-400">
+                      <h4 className="font-bold">
+                        Software Engineer (Frontend)
+                      </h4>
+                      <h6>SSL Wireless</h6>
+                      <p>Duration: 12/2023 - Present</p>
+                    </div>
+                  </div>
+                </Bounce>
+                <Bounce cascade duration={4000}>
+                  <div
+                    className={cn(
+                      "p-4 rounded-lg bg-gray-50 dark:bg-gray-800 mt-1",
                       activeTab === "profession" ? "block" : "hidden"
                     )}
                     role="tabpanel"
@@ -148,11 +182,11 @@ const About = () => {
                         Software Engineer (Frontend)
                       </h2>
                       <h4>SVAM International</h4>
-                      <p>Duration: 7/2022 - present</p>
+                      <p>Duration: 7/2022 - 11/2023</p>
                     </div>
                   </div>
                 </Bounce>
-                <Bounce cascade duration={4000}>
+                <Bounce cascade duration={6000}>
                   <div
                     className={cn(
                       "p-4 rounded-lg bg-gray-50 dark:bg-gray-800 mt-1",
@@ -189,17 +223,17 @@ const About = () => {
             <div className="flex flex-row">
               <Fade left>
                 <Link href="mailto:alaminsahed101@gmail.com" target="blank">
-                  <button className="bg-slate-900/100 hover:bg-white border border-gray-950 hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2">
+                  <button className="bg-slate-900/100 hover:bg-white border border-white hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2">
                     Hire Me
                   </button>
                 </Link>
               </Fade>
               <Fade right>
                 <Link
-                  href="https://drive.google.com/file/d/1Lv8Ernu2bPAHeXoji68dv9caNybi0kwu/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1TlbnIBUGk1L6qY3WmEqYsGgf0E4OL778/view?usp=sharing"
                   target="blank"
                 >
-                  <button className="bg-slate-900/100 hover:bg-white border border-gray-950 hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2">
+                  <button className="bg-slate-900/100 hover:bg-white border border-white hover:text-black text-white font-bold py-2 px-4 rounded-sm m-2">
                     {" "}
                     Download CV{" "}
                   </button>

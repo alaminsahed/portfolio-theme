@@ -15,13 +15,6 @@ library.add(fas, fab);
 const HeaderMain = () => {
   return (
     <div className="md:h-screen bg-black" id="header">
-      {/* <Parallax
-        className="md:h-screen"
-        blur={5}
-        bgImage="/images/background.webp"
-        bgImageAlt="banner"
-        strength={500}
-      > */}
       <Parallax className="md:h-screen" blur={5} strength={500}>
         <Background className="custom-bg w-screen">
           <Image
@@ -59,13 +52,13 @@ const HeaderMain = () => {
               {contactLists.map((item, index) => (
                 <Link
                   href={item.link}
-                  className="text-3xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-2 p-2 hover:bg-white hover:text-black"
+                  className="text-xl bg-gray-500 text-white border rounded-full transition duration-150 ease-linear m-1 p-1 hover:bg-white hover:text-black flex items-center"
                   aria-label={item.name}
                   key={index}
                 >
                   <FontAwesomeIcon
                     icon={item.icon as IconProp}
-                    className="text-center bg-black text-white hover:text-black hover:bg-white p-2 rounded-full"
+                    className="text-xl text-center bg-black text-white hover:text-black hover:bg-white p-1 rounded-full"
                   />
                 </Link>
               ))}

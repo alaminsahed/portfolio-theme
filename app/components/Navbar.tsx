@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-scroll";
 import ThemeChangeBtn from "./ui/ThemeChangeBtn";
 import Image from "next/image";
-//import Link from 'next/link';
 import { cn } from "@/libs/utils";
 
 const Navbar = () => {
@@ -36,15 +35,16 @@ const Navbar = () => {
   return (
     <nav
       className={cn(
-        "border-gray-200 fixed w-full z-20 top-0 left-0",
+        "border-gray-200 fixed w-full z-20 top-0 left-0 md:h-20",
         `${navColor}`
       )}
     >
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
+      <div className="max-w-screen-xl flex flex-col md:flex-row md:items-center justify-center md:justify-between mx-auto p-1">
         <Link to="/" className="flex items-center" href="/">
-          <Image src="/images/logo.png" alt="Logo" width={90} height={60} />
+          <Image src="/images/logo.png" alt="Logo" width={90} height={40} />
           <span className="sr-only">Brad Logo</span>
         </Link>
+
         <button
           data-collapse-toggle="#navbar-default"
           type="button"
@@ -70,6 +70,7 @@ const Navbar = () => {
             />
           </svg>
         </button>
+
         <div
           className={cn(
             "w-full md:block md:w-auto",
@@ -77,8 +78,8 @@ const Navbar = () => {
           )}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0  bg-gray-800 md:bg-transparent border-gray-700">
-            {navLists.map((navList, index) => (
+          <ul className="font-medium flex flex-col md:flex-row md:space-x-8 p-4 md:p-0 mt-1 bg-gray-800 md:bg-transparent">
+            {navLists.map((navList) => (
               <li key={navList.link}>
                 <Link
                   to={navList.link}

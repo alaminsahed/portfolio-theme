@@ -1,15 +1,16 @@
 "use client";
+import React from "react";
 import { useState, useEffect } from "react";
-import NavBar from "../components/Navbar";
-import HeaderMain from "../components/HeaderMain";
-import About from "../components/About";
-import Skills from "../components/Skills";
-import Experience from "../components/Experience";
-import Recommendation from "../components/Recommendation";
-import Projects from "../components/Projects";
-import Blogs from "../components/Blogs";
-import Contact from "../components/Contact";
-import Footer from "../components/Footer";
+const NavBar = React.lazy(() => import("../components/Navbar"));
+const HeaderMain = React.lazy(() => import("../components/HeaderMain"));
+const About = React.lazy(() => import("../components/About"));
+const Skills = React.lazy(() => import("../components/Skills"));
+const Experience = React.lazy(() => import("../components/Experience"));
+const Recommendation = React.lazy(() => import("../components/Recommendation"));
+const Projects = React.lazy(() => import("../components/Projects"));
+const Blogs = React.lazy(() => import("../components/Blogs"));
+const Contact = React.lazy(() => import("../components/Contact"));
+const Footer = React.lazy(() => import("../components/Footer"));
 
 export default function Home() {
   const [theme, setTheme] = useState<string | null>("light");
